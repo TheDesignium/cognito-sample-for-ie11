@@ -19,13 +19,14 @@ const webpackConfig = {
   devServer: {
     contentBase: DIR_DIST,
     host: '0.0.0.0',
-    port: 8123
+    port: 8123,
+    disableHostCheck: true
   }
 };
 
 
 const babelConfig = {
-  use: ['babel-loader'],
+  use: ['babel-loader'], 
   test: /\.(js|jsx)$/,
   exclude: /node_modules/
 };
@@ -44,6 +45,8 @@ const jsonConfig = {
   exclude: /node_modules/
 };
 webpackConfig.module.rules.push(jsonConfig);
+
+
 
 module.exports = webpackConfig;
 
