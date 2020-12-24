@@ -9,3 +9,5 @@ https://qiita.com/tmiki/items/f36edc6c7473f5baa398#%E3%81%AF%E3%81%98%E3%82%81%E
 ### 環境 
 node v15.1.0 
 npm 7.0.8
+
+`npm run start`で起動します
